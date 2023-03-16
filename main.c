@@ -15,9 +15,10 @@ int main()
 	printf("lutfen cumlenizi giriniz");
 	fgets(text,100,stdin);
 	str = strlen(text)-1;
-		for(int k=0;k<lettersize;k++)
+		for(int k = 0 ;k < lettersize; k++)
 		{
-			fprintf(fileo,"%c den %d kadar vardır\n",letters[k],letternumber(letters[k],text));
+			fprintf(fileo, "%c den %d kadar vardır\n", letters[k], letternumber(letters[k],text));
 		}
+		fclose(fileo);
 	return 0;
 }
