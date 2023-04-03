@@ -8,9 +8,10 @@
 #define MAX_BUFFER_SIZE 100
 int main()
 {
-	char Text [100];
-	printf ("lutfen cumlenizi giriniz");
-	fgets (Text,MAX_BUFFER_SIZE,stdin);
-	test(Text);
+	FILE *fp;
+	fp=fopen("/home/bugra/Desktop/Makale.txt","r");
+	char ktr[1000];
+	fgets(ktr,1000,fp);
+	test(ktr);
 	return 0;
 }
